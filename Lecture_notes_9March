@@ -1,0 +1,24 @@
+'''Lecture notes 9th of March'''
+
+#REGULAR EXPRESSIONS:
+import re
+l = 'this is a string with some numbers 13 45'
+numbers = re.findall('\d+',l)  # d = digital number, finds all the numbers in the string, saves it as a list
+
+# can use regular expressions to compute stuff in a simple way 
+# if you need it --> google is your friend
+
+
+#SAVE TEXT FILES: 
+df = pd.read_csv('<file_name>', header = 13)  #using pandas when you have csv file
+df.write()
+
+f = open('<file_name.txt>', 'w')   #creating new file
+l = '''write something
+       write more'''
+f.write(l)
+f.close
+
+#CHANGE PLOT SIZE
+plt.fig(figsize = [x,y])
+
